@@ -24,6 +24,7 @@ services:
     volumes:
       - hadoop_namenode:/hadoop/dfs/name
       - ./nbs:/home/nbs
+      - ./dataset:/home/dataset
     environment:
       - CLUSTER_NAME=test
     env_file:
